@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pleace Enter A Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bEP-XI-ASO">
+                                <rect key="frame" x="34" y="93" width="326" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="h8a-BS-RsR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pleace Enter A Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PLS-X0-6vM">
+                                <rect key="frame" x="34" y="150" width="326" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="8Cb-fu-8lH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tak-yz-Ugu">
+                                <rect key="frame" x="83" y="249" width="35" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+"/>
+                                <connections>
+                                    <action selector="sumClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qyb-g9-7sO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foJ-nK-zTH">
+                                <rect key="frame" x="128" y="249" width="32" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="-"/>
+                                <connections>
+                                    <action selector="minusClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HRU-5l-7qo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZR-NV-9tp">
+                                <rect key="frame" x="174" y="249" width="33" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="x"/>
+                                <connections>
+                                    <action selector="multiClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ReV-95-1Rl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQo-lq-NUo">
+                                <rect key="frame" x="231" y="248" width="29" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="/"/>
+                                <connections>
+                                    <action selector="dviceClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rSP-8J-d4t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWF-4J-xxs">
+                                <rect key="frame" x="271" y="249" width="40" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="%"/>
+                                <connections>
+                                    <action selector="modClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aOg-gZ-mie"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sonuç : 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VS2-ey-3hK">
+                                <rect key="frame" x="38" y="356" width="322" height="99"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nQo-lq-NUo" firstAttribute="leading" secondItem="1ZR-NV-9tp" secondAttribute="trailing" constant="24" id="AjL-gc-3xi"/>
+                            <constraint firstItem="tak-yz-Ugu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="CIa-WX-yey"/>
+                            <constraint firstItem="PLS-X0-6vM" firstAttribute="trailing" secondItem="VS2-ey-3hK" secondAttribute="trailing" id="HKP-0J-UmW"/>
+                            <constraint firstItem="nQo-lq-NUo" firstAttribute="top" secondItem="PLS-X0-6vM" secondAttribute="bottom" constant="64" id="I83-k2-sYf"/>
+                            <constraint firstItem="bEP-XI-ASO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="L18-5g-9BK"/>
+                            <constraint firstItem="foJ-nK-zTH" firstAttribute="baseline" secondItem="1ZR-NV-9tp" secondAttribute="baseline" id="Nkp-5i-L3B"/>
+                            <constraint firstItem="tak-yz-Ugu" firstAttribute="baseline" secondItem="foJ-nK-zTH" secondAttribute="baseline" id="OGt-P6-GK6"/>
+                            <constraint firstItem="VS2-ey-3hK" firstAttribute="top" secondItem="tak-yz-Ugu" secondAttribute="bottom" constant="72" id="RGd-ub-xLz"/>
+                            <constraint firstItem="VS2-ey-3hK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="RQE-M7-IGk"/>
+                            <constraint firstItem="bEP-XI-ASO" firstAttribute="leading" secondItem="PLS-X0-6vM" secondAttribute="leading" id="ZDe-HI-OCk"/>
+                            <constraint firstItem="kWF-4J-xxs" firstAttribute="leading" secondItem="nQo-lq-NUo" secondAttribute="trailing" constant="11" id="bhi-OA-sWd"/>
+                            <constraint firstItem="bEP-XI-ASO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="cAY-HV-I6V"/>
+                            <constraint firstItem="PLS-X0-6vM" firstAttribute="top" secondItem="bEP-XI-ASO" secondAttribute="bottom" constant="23" id="gEY-aa-8kW"/>
+                            <constraint firstItem="bEP-XI-ASO" firstAttribute="trailing" secondItem="PLS-X0-6vM" secondAttribute="trailing" id="gOt-Ge-fRw"/>
+                            <constraint firstItem="foJ-nK-zTH" firstAttribute="leading" secondItem="tak-yz-Ugu" secondAttribute="trailing" constant="10" id="idn-qV-lfT"/>
+                            <constraint firstItem="foJ-nK-zTH" firstAttribute="baseline" secondItem="tak-yz-Ugu" secondAttribute="firstBaseline" id="ixQ-Qg-Ive"/>
+                            <constraint firstItem="1ZR-NV-9tp" firstAttribute="baseline" secondItem="kWF-4J-xxs" secondAttribute="baseline" id="mLU-YI-9N1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VS2-ey-3hK" secondAttribute="bottom" constant="363" id="opJ-15-V9r"/>
+                            <constraint firstItem="1ZR-NV-9tp" firstAttribute="leading" secondItem="foJ-nK-zTH" secondAttribute="trailing" constant="14" id="tgh-uT-gqp"/>
+                            <constraint firstItem="bEP-XI-ASO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x3i-1R-0cp"/>
+                            <constraint firstItem="tak-yz-Ugu" firstAttribute="top" secondItem="PLS-X0-6vM" secondAttribute="bottom" constant="65" id="zCD-C3-Lvy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fitstText" destination="bEP-XI-ASO" id="F1k-wC-uAM"/>
+                        <outlet property="resultLabel" destination="VS2-ey-3hK" id="fFR-z3-r2z"/>
+                        <outlet property="secondText" destination="PLS-X0-6vM" id="YKa-Gb-Qvk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
